@@ -1,0 +1,252 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-div">
+        <h1 class="header-text">AGI24 Group 2</h1>
+        <hr>
+        <h1 class="divider"></h1>
+        <div class="project-links">
+            <a href="#project-1" style="width: 100%;">
+                <img style="background-image: url('../AGI24G2/Images/hedgein.PNG');" class="flex-links"></img>
+            </a>
+            <a href="#project-2" style="width: 100%;">
+                <img style="background-image: url('../AGI24G2/Images/proj2.png');" class="flex-links"></img>
+            </a>
+        </div>
+        <h1 class="divider"></h1>
+        <hr>
+        <h1 class="header-text">The Team</h1>
+        <hr>
+        <div class="group-mem-div">
+            <div class="member">
+                <img style="background-image: url('../AGI24G2/Images/picCarl.PNG');" class="member-image"></img>
+                <p class="member-name">Carl Holmqvist</p>
+                <p class="member-name">Caholmq@kth.se</p>
+                <p class="member-text">For Hedge-In, I focused primarily on the VR interactions and the procedural maze generation. The maze was generated
+                    through the recursive backtracking algorithm, which was utilized for it's simple implementation, and the fact that it
+                    would always generate a completable maze. Other elements of the maze, like the collectibles, where placed at random
+                    with some further conditions to avoid conflicts. The VR implementation used the Unity OpenXR plugin. The movement was 
+                    facilitated through checking the position of the hand controllers in world space at set time intervals, checking for
+                    differences between intervals. I also focused on the monster AI, making sure it moved around autonomously throughout
+                    the maze looking for the player, and hindering players from poking their head into the geometry.
+                    I also made an attempt at adding volumetric clouds and fog to the project, which worked well on PC, but unfortuntantely 
+                    could not be integrated to function correctly in VR in time.
+                </p>
+            </div>
+            <div class="member">
+                <img style="background-image: url('../AGI24G2/Images/myFace.jpg');" class="member-image"></img>
+                <p class="member-name">Beatrice Galvanetto</p>
+                <p class="member-name">beagal@kth.se</p>
+                <p class="member-text">In developing Hedged-In, I focused on designing the monsters' AI and animations. 
+                    I also worked on establishing core game mechanics, such as the "Game Over" and "Victory" conditions. 
+                    I crafted detailed 3D models for key in-game elements, including collectibles, monster distractors, 
+                    and the final exit. Sound design was a major focus; I incorporated ambient sounds and strategically 
+                    placed sound triggers that respond to the monster's proximity, amplifying tension for the player. 
+                    Lastly, I enhanced the game's atmosphere with improved fog effects and upgraded terrain, 
+                    collaborating with other team members to create a visually creepier landscape that complements the VR experience.
+                </p>
+            </div>
+            <div class="member">
+                <img style="background-image: url('../AGI24G2/Images/bild.jpeg');" class="member-image"></img>
+                <p class="member-name">Erica Tjernell</p>
+                <p class="member-name">ericatj@kth.se</p>
+                <p class="member-text">My role in the game development was mostly graphics related, such as the creation of the hedge maze material using 
+                    shell texturing for the strands. I implemented this in a shader using GPU instancing to improve the performance, 
+                    and because we were using VR, it had to be adapted using stereo rendering. I also made it so that the bush receives and casts shadows. 
+                    I was investigating the use of subsurface scattering to make the bush more realistic, but I didn’t end up completing it. Similarly, 
+                    I worked on a visual effect for fire to be used for torches, but because we were close to the end of development, 
+                    I ended up scrapping this due to time constraints. I also collaborated on some smaller features and bug fixes such as fixing some 
+                    settings on the particle system for the fog to make it look better, as well as modeling more hedge models and adapting the code so that 
+                    the slightly rounded maze pieces tiled better. 
+                </p>
+            </div>
+            <div class="member">
+                <img style="background-image: url('../AGI24G2/Images/pfp.jpg');" class="member-image"></img>
+                <p class="member-name">Helin Saeid</p>
+                <p class="member-name">hsaeid@kth.se</p>
+                <p class="member-text">For Hedged-In my initial focus was implementing an algorithm for making random walls in maze interactable in 
+                    the computer view since the maze was generated procedurally each time we ran the game. I have also worked on adding 
+                    immersive effects such as sounds when the doors move and also step sounds when the VR-player was walking in the maze. 
+                    I worked on implementing a shader with a visual effect which we intended to display in VR when encountering monsters in the game. 
+                    The effect worked on the computer but not in VR and was therefore not included. During exhibitions I played an active part in 
+                    recruiting people to try our game. I also conducted user studies by making a questionnaire for the testers and summarized the 
+                    results in text and graphs for evaluation. Finally I made the demo video for the website.
+                </p>
+            </div>
+            <div class="member">
+                <img style="background-image: url('../AGI24G2/Images/DSC00216.jpg');" class="member-image"></img>
+                <p class="member-name">Konstantina Maria Sourmpati</p>
+                <p class="member-name">kmsou@kth.se</p>
+                <p class="member-text">In creating Hedged-In, I was responsible for game UI, environment graphics and artwork. 
+                    I focused on visually interpreting game mechanics on-screen by designing UI for gameplay, game-over, and victory conditions. 
+                    To enhance VR immersion, I developed environment elements and atmospheric effects - sky, terrain, fog, and rain - individually or
+                    in collaboration with the team. Lastly, I designed the in-game canvas art and promotional poster.</p>
+            </div>
+        </div>
+        <h1 class="divider"></h1>
+        <hr>
+        <h1 class="header-text">Hedge In</h1>
+        <hr>
+        <div id="project-1" class="project-div">
+            <div class="demo-vid">
+                <p align="center">
+                    <iframe src="https://www.youtube.com/embed/SfJBshvLJe4" class="project-vid"></iframe>
+                </p>
+            </div>
+            <div class="project-text">
+                <div class="project-text-sub">
+                    <h2 class="sub-header-text">Goals and Motivation</h2>
+                    <p class="member-text">The concept behind our project, Hedged-In, was to create a creepy yet fun experience for players, 
+                        focusing heavily on the communication and collaboration between the two players. One player navigates a maze in virtual reality, 
+                        while the other observes from a top-down view. The top-view player's main role is to guide the VR player to the exit, 
+                        and helping them avoid life-threatening monsters. They can also move certain parts of  the maze, 
+                        and distract the monster so that it does not chase the player. Our goal with *Hedged-In* was to design a game that's both eerie 
+                        and enjoyable, creating a fully collaborative experience for both players.
+                    </p>
+                </div>
+                <div class="project-text-sub">
+                    <h2 class="sub-header-text">Interaction</h2>
+                    <p class="member-text">Hedged-In features two primary forms of interaction. The VR player, equipped with Meta Quest 2, 
+                        is fully immersed in the maze, while the second player views the maze from above, using a desktop mouse to assist. 
+                        The VR player moves within the maze by lifting and lowering their arms, mimicking one's arm movement when running, 
+                        while seated on a revolving chair; turning their body on the chair rotates their in-game perspective. 
+                        The faster they move their arms, the faster they advance through the maze. The second player utilizes the classic keyboard 
+                        and mouse to interact with the game.</p>
+                </div>
+                <div class="project-text-sub">
+                    <h2 class="sub-header-text">Graphics</h2>
+                    <p class="member-text">We aimed to create as much of the environment as possible ourselves—from the moon and clouds to the 
+                        terrain textures, hedge leaves, ambient fog and rain. We also modeled various elements, including collectibles, 
+                        the monster distraction and the mausoleum which signals the end of the maze. The hedge leaves were made using shell 
+                        texturing. Ambient fog and rain was made utilizing the Unity particle system, and the moon was added through a 
+                        procedural skybox, which casts real time shadows upon the environment. An attempt was made at adding volumetric clouds and 
+                        post processing effects as well, which worked on desktop, but couldn't be integrated properly in VR unfortunately. </p>
+                </div>
+                <div class="project-text-sub">
+                    <h2 class="sub-header-text">Challenges</h2>
+                    <p class="member-text">One of the primary challenges was working with VR, which for us heavily relied on Wi-Fi connectivity. 
+                        This was because we chose not to build the project onto the VR headset, but to instead connect it to a PC through the 
+                        Meta air-link feature to be able to utilize the power of the PC, allowing for more resource intensive graphics to be added. 
+                        When the connection was poor however, gameplay became almost impossible. Additionally, integrating VR in Unity presented 
+                        issues, as certain features—like post-processing effects, UI buttons and high FPS—no longer functioned smoothly. 
+                        There were also challenges with colliders and making the monsters' animations fluid within the maze so they move naturally. 
+                        Finally, creating realistic graphics for the hedge presented its own set of difficulties as the shell texturing technique
+                        was not as simple to adjust as was expected.
+                    </p>
+                </div>
+                <div class="project-text-sub">
+                    <h2 class="sub-header-text">Related Work</h2>
+                    <p class="member-text">One big inspiration for this project was a previous AGI-project called <a href="https://vimeo.com/212739324" class="hyperlink"><nobr>CoCar</nobr></a> from 2016, 
+                        which is a cooperative driving game where one person is driving in VR and other people are able to help create a path using a 
+                        Pixelsense screen. We really liked the concept of collaboration where the players have to communicate to help each other 
+                        progress in the game which became the main purpose in our game design. One thing that we wanted to change from their approach,
+                        was to have a bigger sense of urgency, which we have through our timer and the monster in the maze.
+                    </p>
+                    <p class="member-text">We were also inspired by <a href="https://amaze2022.wordpress.com/2022/10/30/a-maze/" class="hyperlink"><nobr>A-Maze</nobr></a> from AGI22. The project takes the form of a game where one player has 
+                        VR goggles and navigates a labyrinth, while the other player helps clear the path using a PC. It features puzzles to be solved, 
+                        spiders to be fought, and moveable blocks in the labyrinth. One thing that we did differently was that the movement in our game 
+                        is done by moving the controllers up and down, compared to the approach in A-Maze which uses the joysticks. 
+                        Using joysticks to propel the VR player can cause cybersickness as it moves the player in an unnatural way. 
+                        With our more natural movement, it can hopefully reduce cybersickness.
+                    </p>    
+                    <p class="member-text">Another source of inspiration was <a href="https://havemercy2016.wordpress.com/" class="hyperlink"><nobr>Have Mercy</nobr></a> from AGI16. It features a maze environment, where both players use 
+                        their phone, and one of them uses a VR headset as well. This game is competitive and the non-VR user plays against the VR user by 
+                        pulling down walls, among other things. Running is done by moving and the phone registering the movement. We like the 
+                        collaborative aspect more which is why we chose to do it instead of the competitive aspect, because it adds more interest to the 
+                        interaction by forcing communication. Also, using phones makes the game easy to use for multiple people, but the small view can 
+                        be very restricting, which is why we think that a big screen is a better approach.
+                    </p>   
+                </div>
+                <div class="project-text-sub">
+                    <h2 class="sub-header-text">Lessons Learned</h2>
+                    <p class="member-text"><strong>Collaborative Teamwork: </strong>  
+                        Working in a team highlighted the value of clear communication, shared responsibilities, and leveraging each member's strengths. 
+                        Collaboration was essential in overcoming challenges and driving the project forward effectively.
+                        It was also essential to have a diverse team with varied skills and interests. For instance, if one team member had a strong interest
+                        in UI design they could focus on that area, while other concentrated on different aspects of the project, while avoiding too much
+                        overlap.
+                    </p>
+                    <p class="member-text"><strong>Handling High-Pressure Technical Issues: </strong> 
+                        Managing unexpected technical issues under tight deadlines taught us the importance of staying calm, troubleshooting methodically, 
+                        and keeping backup plans ready, such as having two headsets charged ready at hand at all times. 
+                        Prioritizing tasks also helped us address the most critical issues first, ensuring the project continued moving forward despite setbacks.
+                    </p>
+                    <p class="member-text"><strong>Gathering User Feedback: </strong> 
+                        Learning to capture meaningful user feedback emphasized listening actively and creating a comfortable environment for users 
+                        to share their experiences. Structured surveys and informal conversations both proved valuable in gaining insights and 
+                        iterating on our work.
+                    </p>
+                    <p class="member-text"><strong>Supporting Users with Cybersickness: </strong>  
+                        Helping users experiencing cybersickness required patience and empathy. I learned techniques to make users feel more comfortable, 
+                        like suggesting breaks and adjusting VR settings to reduce discomfort, while noting symptoms to inform future design choices.
+                        One such setting was to allow for free movement of the head, instead of just rotation, thereby giving the player the ability
+                        to look around themselves like one does in real life. We recieved feedback that this aided users in not feeling discomfort.
+                    </p>
+                    <p class="member-text"><strong>Guiding First-Time VR Users: </strong>
+                        Assisting new VR users taught me to simplify instructions, guide them step-by-step, and remain available for any questions. 
+                        I discovered that clear, concise guidance is key to helping users feel confident and enjoy their VR experience.
+                    </p>
+                </div>
+            </div>
+            <div class="User-test-div">
+                <h2 class="header-text">User Testing</h2>
+                <div class="user-test-img-div">
+                    <img style="background-image: url('../AGI24G2/Images/usertest1.jpg');" class="user-test-img"></img>
+                    <img style="background-image: url('../AGI24G2/Images/usertest2.jpg');" class="user-test-img"></img>
+                    <img style="background-image: url('../AGI24G2/Images/usertest3.jpg');" class="user-test-img"></img>
+                </div>
+            </div>
+        </div>
+        <!--
+        <h1 class="divider"></h1>
+        <h1 class="header-text">Project 2</h1>
+        <div id="project-2" class="project-div">
+            <div class="demo-vid">
+                <p align="center">
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/SfJBshvLJe4" class="project-vid"></iframe>
+                </p>
+            </div>
+            <div class="project-text">
+                <div class="project-text-sub">
+                    <h2 class="sub-header-text">Goals and Motivation</h2>
+                <p class="member-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sollicitudin velit. Suspendisse vitae convallis nisl, sit amet mollis libero. Curabitur fringilla enim et lacus mollis, vel consectetur nibh euismod. Nam a neque eu augue lobortis sollicitudin. Vivamus dui erat, porttitor feugiat justo non, pellentesque pretium leo. Vivamus mattis quam id ullamcorper imperdiet. Proin fermentum arcu quis feugiat molestie. Pellentesque nibh nisl, semper sollicitudin sodales dignissim, aliquet a purus. Quisque massa magna, tristique et urna in, finibus gravida augue. Etiam lacinia, lacus in posuere viverra, sapien tellus sagittis leo, id tincidunt ligula nisl lacinia nunc. Nulla facilisi. Nunc eu hendrerit est. Fusce eu metus molestie, condimentum sem ut, dignissim ex.</p>
+                </div>
+                <div class="project-text-sub">
+                    <h2 class="sub-header-text">Interaction</h2>
+                    <p class="member-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sollicitudin velit. Suspendisse vitae convallis nisl, sit amet mollis libero. Curabitur fringilla enim et lacus mollis, vel consectetur nibh euismod. Nam a neque eu augue lobortis sollicitudin. Vivamus dui erat, porttitor feugiat justo non, pellentesque pretium leo. Vivamus mattis quam id ullamcorper imperdiet. Proin fermentum arcu quis feugiat molestie. Pellentesque nibh nisl, semper sollicitudin sodales dignissim, aliquet a purus. Quisque massa magna, tristique et urna in, finibus gravida augue. Etiam lacinia, lacus in posuere viverra, sapien tellus sagittis leo, id tincidunt ligula nisl lacinia nunc. Nulla facilisi. Nunc eu hendrerit est. Fusce eu metus molestie, condimentum sem ut, dignissim ex.</p>
+                </div>
+                <div class="project-text-sub">
+                    <h2 class="sub-header-text">Graphics</h2>
+                    <p class="member-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sollicitudin velit. Suspendisse vitae convallis nisl, sit amet mollis libero. Curabitur fringilla enim et lacus mollis, vel consectetur nibh euismod. Nam a neque eu augue lobortis sollicitudin. Vivamus dui erat, porttitor feugiat justo non, pellentesque pretium leo. Vivamus mattis quam id ullamcorper imperdiet. Proin fermentum arcu quis feugiat molestie. Pellentesque nibh nisl, semper sollicitudin sodales dignissim, aliquet a purus. Quisque massa magna, tristique et urna in, finibus gravida augue. Etiam lacinia, lacus in posuere viverra, sapien tellus sagittis leo, id tincidunt ligula nisl lacinia nunc. Nulla facilisi. Nunc eu hendrerit est. Fusce eu metus molestie, condimentum sem ut, dignissim ex.</p>
+                </div>
+                <div class="project-text-sub">
+                    <h2 class="sub-header-text">Challenges</h2>
+                    <p class="member-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sollicitudin velit. Suspendisse vitae convallis nisl, sit amet mollis libero. Curabitur fringilla enim et lacus mollis, vel consectetur nibh euismod. Nam a neque eu augue lobortis sollicitudin. Vivamus dui erat, porttitor feugiat justo non, pellentesque pretium leo. Vivamus mattis quam id ullamcorper imperdiet. Proin fermentum arcu quis feugiat molestie. Pellentesque nibh nisl, semper sollicitudin sodales dignissim, aliquet a purus. Quisque massa magna, tristique et urna in, finibus gravida augue. Etiam lacinia, lacus in posuere viverra, sapien tellus sagittis leo, id tincidunt ligula nisl lacinia nunc. Nulla facilisi. Nunc eu hendrerit est. Fusce eu metus molestie, condimentum sem ut, dignissim ex.</p>
+                </div>
+                <div class="project-text-sub">
+                    <h2 class="sub-header-text">Related Work</h2>
+                    <p class="member-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sollicitudin velit. Suspendisse vitae convallis nisl, sit amet mollis libero. Curabitur fringilla enim et lacus mollis, vel consectetur nibh euismod. Nam a neque eu augue lobortis sollicitudin. Vivamus dui erat, porttitor feugiat justo non, pellentesque pretium leo. Vivamus mattis quam id ullamcorper imperdiet. Proin fermentum arcu quis feugiat molestie. Pellentesque nibh nisl, semper sollicitudin sodales dignissim, aliquet a purus. Quisque massa magna, tristique et urna in, finibus gravida augue. Etiam lacinia, lacus in posuere viverra, sapien tellus sagittis leo, id tincidunt ligula nisl lacinia nunc. Nulla facilisi. Nunc eu hendrerit est. Fusce eu metus molestie, condimentum sem ut, dignissim ex.</p>
+                </div>
+                <div class="project-text-sub">
+                    <h2 class="sub-header-text">Lessons Learned</h2>
+                    <p class="member-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sollicitudin velit. Suspendisse vitae convallis nisl, sit amet mollis libero. Curabitur fringilla enim et lacus mollis, vel consectetur nibh euismod. Nam a neque eu augue lobortis sollicitudin. Vivamus dui erat, porttitor feugiat justo non, pellentesque pretium leo. Vivamus mattis quam id ullamcorper imperdiet. Proin fermentum arcu quis feugiat molestie. Pellentesque nibh nisl, semper sollicitudin sodales dignissim, aliquet a purus. Quisque massa magna, tristique et urna in, finibus gravida augue. Etiam lacinia, lacus in posuere viverra, sapien tellus sagittis leo, id tincidunt ligula nisl lacinia nunc. Nulla facilisi. Nunc eu hendrerit est. Fusce eu metus molestie, condimentum sem ut, dignissim ex.</p>
+                </div>
+            </div>
+            <div class="User-test-div">
+                <h2 class="sub-header-text">User Testing</h2>
+                <div class="user-test-img-div">
+                    <img style="background-image: url('../AGI24G2/Images/pfp.jpg');" class="user-test-img"></img>
+                    <img style="background-image: url('../AGI24G2/Images/pfp.jpg');" class="user-test-img"></img>
+                    <img style="background-image: url('../AGI24G2/Images/pfp.jpg');" class="user-test-img"></img>
+                    <img style="background-image: url('../AGI24G2/Images/pfp.jpg');" class="user-test-img"></img>
+                    <img style="background-image: url('../AGI24G2/Images/pfp.jpg');" class="user-test-img"></img>
+                    <img style="background-image: url('../AGI24G2/Images/pfp.jpg');" class="user-test-img"></img>
+                </div>
+                <div class="user-test-img-div"></div>
+                <div class="user-test-img-div"></div>
+            </div>
+        </div>
+        -->
+    </div>
+</body>
