@@ -80,6 +80,47 @@ body {
     font-size: large;
 }
 
+.member-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-content: center;
+    gap: 1rem;
+}
+.website-links{
+    text-decoration: none;
+}
+
+.website-links:link{
+    color: white;
+}
+
+.website-links:visited {
+    color: white;
+}
+
+.website-links:hover {
+    color: white;
+}
+
+.website-links:active {
+    color:white;
+}
+
+.LinkedIn{
+    background-color: blue;
+    border-radius: 0.25rem;
+    font-size: large;
+    padding: 0.25rem;
+}
+
+.GitHub{
+    background-color: darkgreen;
+    border-radius: 0.25rem;
+    font-size: large;
+    padding: 0.25rem;
+}
+
 .member-text{
     color: white;
     text-align: justify;
