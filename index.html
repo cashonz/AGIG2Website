@@ -8,10 +8,10 @@
         <h1 class="divider"></h1>
         <div class="project-links">
             <a href="#project-1" style="width: 100%;">
-                <img style="background-image: url('../AGIG2Website/Images/hedgein.PNG');" class="flex-links"></img>
+                <img style="background-image: url('../AGI24G2/Images/hedgein.PNG');" class="flex-links"></img>
             </a>
             <a href="#project-2" style="width: 100%;">
-                <img style="background-image: url('../AGIG2Website/Images/proj2.png');" class="flex-links"></img>
+                <img style="background-image: url('../AGI24G2/Images/Poster_3.png');" class="flex-links"></img>
             </a>
         </div>
         <h1 class="divider"></h1>
@@ -20,7 +20,7 @@
         <hr>
         <div class="group-mem-div">
             <div class="member">
-                <img style="background-image: url('../AGIG2Website/Images/picCarl.PNG');" class="member-image"></img>
+                <img style="background-image: url('../AGI24G2/Images/picCarl.PNG');" class="member-image"></img>
                 <p class="member-name">Carl Holmqvist</p>
                 <p class="member-name">Caholmq@kth.se</p>
                 <div class="member-links">
@@ -41,9 +41,15 @@
                     I also made an attempt at adding volumetric clouds and fog to the project, which worked well on PC, but unfortuntantely 
                     could not be integrated to function correctly in VR in time. This website is also made by me.
                 </p>
+                <p class="member-text">
+                    For Infinite Sailing, I was responsible for the infinite terrain and river generation. With that I also implemented the
+                    logic for spawning obstacles in the river, and 3D objects onto the terrain as scenery. I also wrote shaders for the grass
+                    (being made up of a geometry shader) and terrain coloring. I was also responsible for integrating hand controls into the project,
+                    which was done by a google MediaPipe implementation in Python which then communicated with Unity using a UDP web-socket.
+                </p>
             </div>
             <div class="member">
-                <img style="background-image: url('../AGIG2Website/Images/myFace.jpg');" class="member-image"></img>
+                <img style="background-image: url('../AGI24G2/Images/myFace.jpg');" class="member-image"></img>
                 <p class="member-name">Beatrice Galvanetto</p>
                 <p class="member-name">beagal@kth.se</p>
                 <div class="member-links">
@@ -64,9 +70,12 @@
                     Lastly, I enhanced the game's atmosphere with improved fog effects and upgraded terrain, 
                     collaborating with other team members to create a visually creepier landscape that complements the VR experience.
                 </p>
+                <p class="member-text">
+                    In developing Infinite Sailing, on the graphics side, I used Blender to model the boat and rocks. Following that, I implemented the day and night cycle in the main scene, which was later refined by the team member responsible for the sky. Additionally, I took charge of the microphone interactions, adding UI elements to support this feature. I also collaborated with other team members to develop the initial tutorial presented before the game starts.
+                </p>
             </div>
             <div class="member">
-                <img style="background-image: url('../AGIG2Website/Images/bild.jpeg');" class="member-image"></img>
+                <img style="background-image: url('../AGI24G2/Images/bild.jpeg');" class="member-image"></img>
                 <p class="member-name">Erica Tjernell</p>
                 <p class="member-name">ericatj@kth.se</p>
                 <div class="member-links">
@@ -77,7 +86,7 @@
                         <span class="GitHub">GitHub</span>
                     </a>
                 </div>
-                <p class="member-text">My role in the game development was mostly graphics related, such as the creation of the hedge maze material using 
+                <p class="member-text">My role in developing hedge-in was mostly graphics related, such as the creation of the hedge maze material using 
                     shell texturing for the strands. I implemented this in a shader using GPU instancing to improve the performance, 
                     and because we were using VR, it had to be adapted using stereo rendering. I also made it so that the bush receives and casts shadows. 
                     I was investigating the use of subsurface scattering to make the bush more realistic, but I didn’t end up completing it. Similarly, 
@@ -86,9 +95,12 @@
                     settings on the particle system for the fog to make it look better, as well as modeling more hedge models and adapting the code so that 
                     the slightly rounded maze pieces tiled better. 
                 </p>
+                <p class="member-text">
+                    For Infinite Sailing I worked on the clouds. The clouds are explained in the graphics section! I also helped with merging and managing the project in general, since we used my GitHub to create the project, and my account on the computer with the builds.
+                </p>
             </div>
             <div class="member">
-                <img style="background-image: url('../AGIG2Website/Images/20200612_180450.jpg');" class="member-image"></img>
+                <img style="background-image: url('../AGI24G2/Images/20200612_180450.jpg');" class="member-image"></img>
                 <p class="member-name">Helin Saeid</p>
                 <p class="member-name">hsaeid@kth.se</p>
                 <div class="member-links">
@@ -109,9 +121,12 @@
                     recruiting people to try our game. I also conducted user studies by making a questionnaire for the testers and summarized the 
                     results in text and graphs for evaluation. Finally I made the demo video for the website.
                 </p>
+                <p class="member-text">
+                    For Infinite Sailing I worked on implementing some game mechanics. I implemented the collision logic for the boat and the terrain so that the boat could collide with the rocks and riverbanks and lose life when doing so.
+                </p>
             </div>
             <div class="member">
-                <img style="background-image: url('../AGIG2Website/Images/DSC00216.jpg');" class="member-image"></img>
+                <img style="background-image: url('../AGI24G2/Images/DSC00216.jpg');" class="member-image"></img>
                 <p class="member-name">Konstantina Maria Sourmpati</p>
                 <p class="member-name">kmsou@kth.se</p>
                 <div class="member-links">
@@ -128,6 +143,9 @@
                     I focused on visually interpreting game mechanics on-screen by designing UI for gameplay, game-over, and victory conditions. 
                     To enhance VR immersion, I developed environment elements and atmospheric effects - sky, terrain, fog, and rain - individually or
                     in collaboration with the team. Lastly, I designed the in-game canvas art and promotional poster.</p>
+                <p class="member-text">
+                    During the creation of Infinite Sailing I worked mainly on graphics related to water aesthetics. More specifically my work includes the creation of the water shader graph and designing the splash effect particle system as described in the corresponding section of the project. Also, I worked together with other team members on implementing the initial microphone interaction system for monitoring the boat’s tilt direction based on the detected audio input. Finally, I contributed to the UI design of the onboarding canvas. 
+                </p>
             </div>
         </div>
         <h1 class="divider"></h1>
@@ -238,61 +256,103 @@
             <div class="User-test-div">
                 <h2 class="header-text">User Testing</h2>
                 <div class="user-test-img-div">
-                    <img style="background-image: url('../AGIG2Website/Images/usertest1.jpg');" class="user-test-img"></img>
-                    <img style="background-image: url('../AGIG2Website/Images/usertest2.jpg');" class="user-test-img"></img>
-                    <img style="background-image: url('../AGIG2Website/Images/usertest3.jpg');" class="user-test-img"></img>
+                    <img style="background-image: url('../AGI24G2/Images/usertest1.jpg');" class="user-test-img"></img>
+                    <img style="background-image: url('../AGI24G2/Images/usertest2.jpg');" class="user-test-img"></img>
+                    <img style="background-image: url('../AGI24G2/Images/usertest3.jpg');" class="user-test-img"></img>
                 </div>
             </div>
         </div>
-        <!--
         <h1 class="divider"></h1>
-        <h1 class="header-text">Project 2</h1>
+        <hr>
+        <h1 class="header-text">Infinite Sailing</h1>
+        <hr>
         <div id="project-2" class="project-div">
             <div class="demo-vid">
                 <p align="center">
-                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/SfJBshvLJe4" class="project-vid"></iframe>
+                    <iframe src="https://www.youtube.com/embed/7gI3M2HG_Bc?si=lqQ-cqJningF-6qN" class="project-vid"></iframe>
                 </p>
             </div>
             <div class="project-text">
                 <div class="project-text-sub">
                     <h2 class="sub-header-text">Goals and Motivation</h2>
-                <p class="member-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sollicitudin velit. Suspendisse vitae convallis nisl, sit amet mollis libero. Curabitur fringilla enim et lacus mollis, vel consectetur nibh euismod. Nam a neque eu augue lobortis sollicitudin. Vivamus dui erat, porttitor feugiat justo non, pellentesque pretium leo. Vivamus mattis quam id ullamcorper imperdiet. Proin fermentum arcu quis feugiat molestie. Pellentesque nibh nisl, semper sollicitudin sodales dignissim, aliquet a purus. Quisque massa magna, tristique et urna in, finibus gravida augue. Etiam lacinia, lacus in posuere viverra, sapien tellus sagittis leo, id tincidunt ligula nisl lacinia nunc. Nulla facilisi. Nunc eu hendrerit est. Fusce eu metus molestie, condimentum sem ut, dignissim ex.</p>
+                <p class="member-text">The game's main idea is that the player becomes a god-like creature controlling a boat traveling down a river while avoiding obstacles in the river, 
+                    such as rocks and the river bank. Players can use hand movements in front of a webcam and sounds picked up by a microphone to control the wind, which moves the boat and helps avoid obstacles. 
+                    The key goals for the game are:<br><br>
+                    <strong>    Interactive Gameplay: </strong>Incorporate diverse types of interaction to engage users.<br>
+                    <strong>    Visual Appeal: </strong>Design a visually captivating environment to enhance the gaming experience.<br>
+                    <strong>    Sonic Appeal: </strong>Create a soothing yet immersive atmosphere through the power of sound.<br><br>
+                    In summary, our goal was to create a unique experience that used hand gestures and sound as interactive elements while also designing a visually appealing project that could be efficiently implemented within the limited time we had.
+                    </p>
                 </div>
                 <div class="project-text-sub">
                     <h2 class="sub-header-text">Interaction</h2>
-                    <p class="member-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sollicitudin velit. Suspendisse vitae convallis nisl, sit amet mollis libero. Curabitur fringilla enim et lacus mollis, vel consectetur nibh euismod. Nam a neque eu augue lobortis sollicitudin. Vivamus dui erat, porttitor feugiat justo non, pellentesque pretium leo. Vivamus mattis quam id ullamcorper imperdiet. Proin fermentum arcu quis feugiat molestie. Pellentesque nibh nisl, semper sollicitudin sodales dignissim, aliquet a purus. Quisque massa magna, tristique et urna in, finibus gravida augue. Etiam lacinia, lacus in posuere viverra, sapien tellus sagittis leo, id tincidunt ligula nisl lacinia nunc. Nulla facilisi. Nunc eu hendrerit est. Fusce eu metus molestie, condimentum sem ut, dignissim ex.</p>
+                    <p class="member-text">This project incorporates two types of interactions: hand tracking and microphone input. 
+                        Both are detected using a webcam positioned above the screen displaying the game, directly in front of the user.<br><br>
+                        <strong>Hand Tracking: </strong>The boat's movement left or right is controlled by the user's hand positions, which are captured by a web camera. Google MediaPipe was used to track the hands, which was implemented in Python. The data on the screen position of the users’ hands was then sent to Unity by using a UDP web-socket. The boat's direction is determined by the "balance of the hands". Even if the hands are far apart, as long as they are equally distanced from the center, the boat will continue moving forward. Intuitively, when both hands move to the right, the boat tilts right, and when both hands move to the left, the boat tilts left.<br><br>
+                        <strong>Microphone Interaction: </strong>The microphone detects the user's sound input and adjusts the boat's speed based on the volume. Initially, the boat moves slowly, encouraging the user to make noise. As the game progresses, the boat speeds up, and the microphone can even allow an external person to join in by making noise, further increasing the challenge. At first, we considered using sound to control the tilting of the boat rather than its speed. Achieving this would have required speech processing on the microphone, utilizing two microphones—one for the left and one for the right—and implementing a system to detect specific inputs like blowing into the microphones, combined with some form of speech filtering. Given the limited amount of time we decided to opt for hand tracking instead to control the boats inclination. 
+                    </p>
                 </div>
                 <div class="project-text-sub">
                     <h2 class="sub-header-text">Graphics</h2>
-                    <p class="member-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sollicitudin velit. Suspendisse vitae convallis nisl, sit amet mollis libero. Curabitur fringilla enim et lacus mollis, vel consectetur nibh euismod. Nam a neque eu augue lobortis sollicitudin. Vivamus dui erat, porttitor feugiat justo non, pellentesque pretium leo. Vivamus mattis quam id ullamcorper imperdiet. Proin fermentum arcu quis feugiat molestie. Pellentesque nibh nisl, semper sollicitudin sodales dignissim, aliquet a purus. Quisque massa magna, tristique et urna in, finibus gravida augue. Etiam lacinia, lacus in posuere viverra, sapien tellus sagittis leo, id tincidunt ligula nisl lacinia nunc. Nulla facilisi. Nunc eu hendrerit est. Fusce eu metus molestie, condimentum sem ut, dignissim ex.</p>
+                    <p class="member-text">
+                        <strong>Clouds And Sun: </strong>The clouds are created by the use of 3D noise and ray-marching. The 3D noise of varying type and frequencies will determine the cloudscape and more local details of the cloud, such as the smoothness or roughness of the edges. Ray-marching is done twice. First a ray is marched through the volume, sampling the density along it, then a ray is marched towards the sun. Some lighting phenomena are taken into account such as attenuation (Beer's law) and silver lining (henyey-greenstein). Attenuation is about how much light reaches a point, depending on distance and the density from the light source. Henyey-Greenstein is a phase function, determining the direction where light will bounce to. If it bounces inwards to the medium, it's called in-scattering, and if it bounces outwards, it's called out-scattering.<br><br>
+                        Additionally a day-night cycle was added to make the sky appear more realistic. The Unity script controlling the day-night  cycle manages the rotation of the sun and moon to simulate their movement across the sky based on the time of day. The rotation is calculated using a normalized time value, where 0 represents midnight and 1 represents the end of the day. The orientation of the sun and moon is determined by combining vertical tilt and horizontal direction.<br><br>
+                        In "Infinite Sailing," the sun's intensity increases during the day and decreases at night, while the moon's intensity follows the opposite pattern. However, the long duration of the day makes it nearly impossible for users to experience the night, as they typically lose before it gets dark. Ambient lighting shifts between user-defined day and night colors, with changes driven by the sun's position. Additionally, the sun's color temperature evolves throughout the day, transitioning from warm tones at sunrise and sunset to cooler tones at noon.<br><br>
+                        <strong>Models & Assets: </strong> In this project, we created various models. The first model that was created was the boat. Using Blender, we followed several YouTube tutorials to guide the process, and we opted for a low-poly design to match the stylistic direction we chose.
+                        The rocks were also created in Blender, using its built-in rock generator. By default, Blender generates rocks with a very high vertex count, which we decreased as needed to suit our requirements.
+                        The vegetation featured on the terrain consists of pre-made 3D assets, which we integrated into the environment.                      
+                    </p>
+                </div>
+                <div class="project-text-sub">
+                    <h2 class="sub-header-text">Graphics</h2>
+                    <p class="member-text">
+                        <strong>Wind: </strong>The wind was created by using the particle systems in Unity. Three separate particle systems were created and combined to create one prefab. The particle systems were made out of one particle each and their movements were configured through their respective x, y, and z velocity curves. I added a trail and adjusted its size to fade in and out to give the system its wind-like visuals. This created a cartoon-style 3D wind element which fit with the rest of our project.<br><br>
+                        <strong>Procedural Terrain & River Generation: </strong>The terrain shape was created using Perlin noise and fractional Brownian motion. The terrain was also extended to be infinite, and utilized threading for improved performance. The terrain meshes also supported different levels of detail, to further improve performance. The river that runs through the terrain that the player traverses was made by subtracting a fall-off map from the generated base-mesh, which resulted in a carved out passage in which the player could guide their boat through. Obstacles in the river were randomly placed, and the frequency of placed obstacles depended on the distance the player had traversed in that play session. The Scenery of the terrain consisted of trees, rocks and grass. The trees and rocks were simple 3D-objects which were distributed onto the terrain, and the grass was implemented by a custom geometry shader that generated blades of grass onto the terrain mesh vertices.<br><br>
+                        <strong>Water: </strong>The river water was created by developing a custom water shader graph in Unity. The graph consisted of connections related to the water surface, the water reflection, the water refraction, and underwater colouring. Concerning the water surface, the graph elements are responsible for simulating the water feel by applying texture distortion normal mapping of Voronoi noise and regulating wave speed by time to give the sense of moving water in the river direction. For the water reflection, a ready-made package was used <a href="https://github.com/Kink3d/kMirrors" class="hyperlink"><nobr>(by kMirrors)</nobr></a> as a map script reference in the graph for portraying a mirror-like effect that reflected the surroundings of the river sides (grass, trees, sun). Within the reflection part, the variable of 'reflection refraction' was added to reflect the light going through the water surface. In underwater settings, refraction was also used as a method to add highlights to the water by applying the Fresnel equation paired with a glossy effect. The underwater colour was achieved by taking the scene colour and applying a transparent effect to it, particularly water colour was a combination of the green and blue colours of the surrounding reflecting on transparent water just like in real-world settings. 
+                        Another element of the water system is the splash effect triggered when the boat collides with rock obstacles, enhancing both the fun and realism of the water interactions. The splash was created as a particle system. As a particle unit material, a bubble-looking material that utilises a bubble image sprite was created. Its rendering mode is set to additive to keep only the bubble image and remove the background when the particles emit. The particle system is cone-shaped, with size, colour, and rotation changing over its lifetime to make the effect look more natural.
+                    </p>
                 </div>
                 <div class="project-text-sub">
                     <h2 class="sub-header-text">Challenges</h2>
-                    <p class="member-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sollicitudin velit. Suspendisse vitae convallis nisl, sit amet mollis libero. Curabitur fringilla enim et lacus mollis, vel consectetur nibh euismod. Nam a neque eu augue lobortis sollicitudin. Vivamus dui erat, porttitor feugiat justo non, pellentesque pretium leo. Vivamus mattis quam id ullamcorper imperdiet. Proin fermentum arcu quis feugiat molestie. Pellentesque nibh nisl, semper sollicitudin sodales dignissim, aliquet a purus. Quisque massa magna, tristique et urna in, finibus gravida augue. Etiam lacinia, lacus in posuere viverra, sapien tellus sagittis leo, id tincidunt ligula nisl lacinia nunc. Nulla facilisi. Nunc eu hendrerit est. Fusce eu metus molestie, condimentum sem ut, dignissim ex.</p>
+                    <p class="member-text">
+                        The main challenge we faced was deciding on the type of interaction for the game. Initially, as mentioned earlier, we envisioned the experience being entirely microphone-based. The idea was for the user to act as the wind, blowing into the microphone to tilt the boat and avoid obstacles. However, we quickly realized that microphones are not designed to handle blowing directly into them.<br><br>
+                        Following this, we considered making the project frequency-based, requiring the user to produce a specific frequency by blowing into an instrument. This posed another issue: finding an instrument that could consistently produce the same frequency regardless of intensity. Furthermore, we recognized that the project would be presented in a noisy environment, and creating a game reliant entirely on sound would require advanced speech filtering—something none of us could achieve within the limited time available.<br><br>
+                        As a result, we shifted to a gesture-based interaction system, with sound controls playing only a minor role in the gameplay. This approach provided a more practical and effective solution to the challenges we encountered.
+                    </p>
                 </div>
                 <div class="project-text-sub">
                     <h2 class="sub-header-text">Related Work</h2>
-                    <p class="member-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sollicitudin velit. Suspendisse vitae convallis nisl, sit amet mollis libero. Curabitur fringilla enim et lacus mollis, vel consectetur nibh euismod. Nam a neque eu augue lobortis sollicitudin. Vivamus dui erat, porttitor feugiat justo non, pellentesque pretium leo. Vivamus mattis quam id ullamcorper imperdiet. Proin fermentum arcu quis feugiat molestie. Pellentesque nibh nisl, semper sollicitudin sodales dignissim, aliquet a purus. Quisque massa magna, tristique et urna in, finibus gravida augue. Etiam lacinia, lacus in posuere viverra, sapien tellus sagittis leo, id tincidunt ligula nisl lacinia nunc. Nulla facilisi. Nunc eu hendrerit est. Fusce eu metus molestie, condimentum sem ut, dignissim ex.</p>
+                    <p class="member-text">
+                        We were initially inspired by a series of previous projects, such as <a href="https://agi23-g8.github.io/#/" class="hyperlink"><nobr>Peak Panic</nobr></a> from AGI2023, <a href="https://advancedgraphicwizards.github.io/p-plane_panic/" class="hyperlink"><nobr>Plane Panic</nobr></a>, and <a href="https://astrorush.netlify.app/" class="hyperlink"><nobr>Astro-Rush</nobr></a> from AGI 2024. These games shared a similar mechanic, where the player controlled a character or object along a path, aiming to avoid obstacles. In all three cases, the user controlled the object by tilting their phone. We decided to build on this concept but make a change by shifting to a gesture-based control mechanic instead.<br><br>
+                        <strong>Research Papers: </strong>
+                        The first paper explored microphone interaction in VR, which served as an inspiration for our study. It demonstrated that most participants preferred generating noise in the VR environment rather than using controllers. The paper presented various tasks. The first task allowed users to make a spring wheel rotate, while the second task involved making a ball roll on a surface in VR. Both tasks were performed either by blowing into the microphone or using controllers, with participants preferring the microphone interaction. <a href="https://dl.acm.org/doi/10.1109/TVCG.2023.3238478" class="hyperlink"><nobr>Link To Paper</nobr></a><br><br>
+                        Master thesis about real-time volumetric clouds that inspired the clouds in our game: <a href="https://www.diva-portal.org/smash/get/diva2:1223894/FULLTEXT01.pdf" class="hyperlink"><nobr>Link To Paper</nobr></a><br><br>
+                    </p>
                 </div>
                 <div class="project-text-sub">
                     <h2 class="sub-header-text">Lessons Learned</h2>
-                    <p class="member-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sollicitudin velit. Suspendisse vitae convallis nisl, sit amet mollis libero. Curabitur fringilla enim et lacus mollis, vel consectetur nibh euismod. Nam a neque eu augue lobortis sollicitudin. Vivamus dui erat, porttitor feugiat justo non, pellentesque pretium leo. Vivamus mattis quam id ullamcorper imperdiet. Proin fermentum arcu quis feugiat molestie. Pellentesque nibh nisl, semper sollicitudin sodales dignissim, aliquet a purus. Quisque massa magna, tristique et urna in, finibus gravida augue. Etiam lacinia, lacus in posuere viverra, sapien tellus sagittis leo, id tincidunt ligula nisl lacinia nunc. Nulla facilisi. Nunc eu hendrerit est. Fusce eu metus molestie, condimentum sem ut, dignissim ex.</p>
+                    <p class="member-text">
+                        <strong>Teamwork: </strong>From our previous project, we learned to manage multiple tasks effectively, prioritize them, and allocate responsibilities among team members. This course emphasized the importance of teamwork and effective communication, which became a cornerstone of our project's success.
+                    </p>
+                    <p class="member-text">
+                        <strong>Working Under Pressure: </strong>In contrast to our earlier project, this time we had only four weeks to conceive and develop Infinite Sailing. The increased pressure served as a catalyst, pushing us to work more efficiently and remain focused throughout the process.
+                    </p>
+                    <p class="member-text">
+                        <strong>Adapting to Circumstances: </strong>Adaptability was a key takeaway from this experience. We made significant changes towards the end of the project, including substituting the primary interaction method for controlling the boat, demonstrating our ability to pivot and adjust based on evolving circumstances.
+                    </p>
+                    <p class="member-text">
+                        <strong>New Forms of Interaction: </strong>This project introduced us to new technologies and techniques, such as hand tracking and microphone inputs in Unity. While we were already familiar with Unity, integrating Python scripts and utilizing Unity's microphone input functionality were entirely new challenges. These tasks pushed us to expand our skill set and explore innovative interaction methods within the platform.
+                    </p>
                 </div>
             </div>
             <div class="User-test-div">
                 <h2 class="sub-header-text">User Testing</h2>
                 <div class="user-test-img-div">
-                    <img style="background-image: url('../AGI24G2/Images/pfp.jpg');" class="user-test-img"></img>
-                    <img style="background-image: url('../AGI24G2/Images/pfp.jpg');" class="user-test-img"></img>
-                    <img style="background-image: url('../AGI24G2/Images/pfp.jpg');" class="user-test-img"></img>
-                    <img style="background-image: url('../AGI24G2/Images/pfp.jpg');" class="user-test-img"></img>
-                    <img style="background-image: url('../AGI24G2/Images/pfp.jpg');" class="user-test-img"></img>
-                    <img style="background-image: url('../AGI24G2/Images/pfp.jpg');" class="user-test-img"></img>
+                    <img style="background-image: url('../AGI24G2/Images/infsail1.jpg');" class="user-test-img"></img>
+                    <img style="background-image: url('../AGI24G2/Images/infsail2.jpg');" class="user-test-img"></img>
+                    <img style="background-image: url('../AGI24G2/Images/infsail3.PNG');" class="user-test-img"></img>
                 </div>
-                <div class="user-test-img-div"></div>
-                <div class="user-test-img-div"></div>
             </div>
         </div>
-        -->
     </div>
 </body>
